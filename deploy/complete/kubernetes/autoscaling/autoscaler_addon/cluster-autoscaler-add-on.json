@@ -1,0 +1,17 @@
+{
+    "addonName": "ClusterAutoscaler",
+    "configurations": [
+        {
+            "key": "nodes",
+            "value": "<min-nodes>:<max-nodes>:<nodepool-ocid>"
+        },
+        {
+            "key": "expander",
+            "value": "priority"
+        },
+        {
+            "key": "authType",
+            "value": "workload"
+        }
+    ]
+}
