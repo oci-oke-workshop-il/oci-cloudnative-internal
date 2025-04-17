@@ -310,3 +310,186 @@ ubuntu@instance-vm-oke:~/.oci$ vi oci_api_key_public.pem
 :q
   
 ```
+
+10. Upload Public key  
+- In the OCI Console Navigate to **User Setting** > Click **API keys** > **Add API key**
+
+
+![Upload Public Key](./../../images/screenshot/1_23.png)
+
+- Choose **Paste a public key** > Paste the public key copied earlier
+
+
+![Paste Public Key](./../../images/screenshot/1_24.png)
+
+- Validate public key added
+
+
+![Public Key Added](./../../images/screenshot/1_25.png)
+
+- Validate the OCI config file with the following command:
+
+```bash
+oci os ns get
+```
+
+![Public Key Added](./../../images/screenshot/1_26.png)
+
+> **Note**: Wait few minutes for the Key to be updated before moving to Task 8
+
+
+# 🧩 Task 8: Set Up Policy to Manage OCI Resources
+
+1. Navigate to **Identity & Security > Domains** > Click **Default** > **Groups** > Click **Create Group** and add user to the group
+
+
+![Create Group](./../../images/screenshot/1_27.png)
+
+2. Create Group
+
+
+![Create Group Form](./../../images/screenshot/1_28.png)
+
+- Add the User to the Group via the **Create Group** tab:  
+  Search **Username** > checkbox the username
+
+  ![Add User to Group](./../../images/screenshot/1_29.png)
+
+  3. Create Policy  
+- Navigate to **Identity & Security > Domains > Policies > Create Policy**
+
+- Add Policy:  
+```text
+Allow group <GroupName> to manage all-resources in tenancy <Tenancy Name>
+```
+> 🔧 **Change the view to:** Manual Builder
+
+**Notes:**
+- Replace `<GroupName>` with the newly created group  
+- Replace `<CompartmentName>` with the root compartment name for the purpose of this lab  
+
+⚠️ This policy is broad for simplicity, consider refining it for real-world usage.
+
+
+
+
+
+
+
+
+
+
+
+# 🧩 Task 10: Running Containers Locally with Docker
+
+## Introduction
+
+This task demonstrates how to build microservices code on the created VM, push them to OCI Container Registry, and run them using Docker Compose.
+
+---
+
+### 1. Create Container Registry
+
+- Navigate to **Developer Services > Container Registry**  
+- Click **Create Repository**  
+- Select the **root compartment**  
+- Set **Access Type** to **Public**  
+- Specify a **Repository Name**  
+- Click **Create**
+
+
+![Create Container Registry](./../../images/screenshot/1_30.png)
+
+### 2. Generate Auth Token
+
+- Click your **Profile icon** (top-right corner)  
+- Go to **User Settings > Auth Tokens**  
+- Generate a token and **copy it** for future use
+
+
+
+![Generate Auth Token](./../../images/screenshot/1_31.png)
+
+
+### 3. Staging Docker Images Locally
+
+- Login to the repository using the following command:
+
+```bash
+docker login <region_code>.ocir.io
+```
+
+### 🔐 Docker Login – Frankfurt Region Example
+
+- To log in to the OCI Container Registry for Frankfurt, use the following command:
+
+```bash
+docker login fra.ocir.io
+```
+
+**Username format:** `<registry-namespace>/default/<username>`  
+**Example:** `froqjg8h9ftr/default/user@domain.com`  
+**Password:** Use the Auth Token generated in your profile settings.
+
+
+### 11. 🐳 Build and Deploy Using Docker
+
+1. Create a folder called `oci_workshop`:
+
+```bash
+mkdir oci_workshop
+cd oci_workshop
+```
+
+2. Clone the GitHub repository:
+```bash
+git clone https://github.com/oci-oke-workshop-il/oci-cloudnative-ext.git
+```
+
+3. Navigate to the src folder and validate that the following microservices exist.
+
+![docker](./../../images/screenshot/1_33.png)
+
+
+### 4. 🛠️ Build Docker Images
+
+- **Build Docker for the `api` microservice**:
+
+```bash
+docker build -t give_name_of_docker_image:version .
+
+# Example:
+docker build -t mushop_api:v1 .
+```
+
+- **Tag the newly created images as follow:**: 
+
+```bash
+docker tag give_name_of_docker_image:version oci_region/registry_namespace/registry_name/name_of_docker_image:version 
+
+# Example: 
+docker tag mushop_api:v1 fra.ocir.io/froqjg8h9ftr/oke_workshop/mushop_assets:v1
+```
+- **Push Docker images to the OCI container registry as follow**:
+
+```bash
+docker push oci_region/registry-namespace/registry_name/name_of_docker_image:version
+
+# Example: 
+docker push fra.ocir.io/froqjg8h9ftr/oke_workshop/mushop_api:v1
+```
+
+### 5. 🔁 Repeat for All Microservices
+
+- **Repeat steps 4–6** for each image to ensure all microservices are uploaded.
+
+
+
+### 6. ✅ Validate Docker Images
+
+- **Run the following command** to verify all Docker images have been built:
+
+```bash
+docker images -a
+```
+
