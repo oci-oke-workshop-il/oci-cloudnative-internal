@@ -18,6 +18,7 @@ Begin by logging into your **OCI Dashboard** to retrieve the necessary configura
 
 Click on **Infrastructure Dashboard** from the homepage.
 
+---
 
 ## 🧩 Task 2: Create a Virtual Cloud Network (VCN)
 
@@ -84,7 +85,7 @@ The following screen displays the full configuration of your **VCN**, including 
 
 ![VCN Configuration Overview](./../../images/screenshot/1_6.png)
 
-
+---
 
 # 🧩 Task 3: Configure Security List for Public Access
 
@@ -118,6 +119,8 @@ In the **Add Ingress Rules** panel:
 
 Also confirm the **Egress Rule** allows traffic to:  
 - `0.0.0.0/0` _(default)_
+
+---
 
 # 🧩 Task 4: Import Custom Image
 
@@ -164,7 +167,7 @@ After clicking **Import Image**, the upload process will begin.
 Please wait until the image is **fully uploaded and processed** before proceeding to Task 5.
 
 
-
+---
 
 # 🧩 Task 5: Create a Compute Instance
 
@@ -235,6 +238,7 @@ Fill out the following details:
   
 ![SSH Key Generation](./../../images/screenshot/1_17.png)
 
+---
 
 # 🧩 Task 6: Connect the VM via SSH
 
@@ -251,6 +255,7 @@ chmod 700 ssh_private_key.key
 ssh -i <path/to/private key/ssh_private_keyname> ubuntu@<PUBLIC_IP_OF_COMPUTE>
 ```
 
+---
 
 
 # 🧩 Task 7: Configure OCI CLI on VM
@@ -342,6 +347,7 @@ oci os ns get
 
 > **Note**: Wait few minutes for the Key to be updated before moving to Task 8
 
+---
 
 # 🧩 Task 8: Set Up Policy to Manage OCI Resources
 
@@ -379,7 +385,7 @@ Allow group <GroupName> to manage all-resources in tenancy <Tenancy Name>
 
 
 
-
+---
 
 
 
@@ -436,6 +442,7 @@ docker login fra.ocir.io
 **Example:** `froqjg8h9ftr/default/user@domain.com`  
 **Password:** Use the Auth Token generated in your profile settings.
 
+---
 
 # 🧩 Task 10:   Build and Deploy Using Docker
 
