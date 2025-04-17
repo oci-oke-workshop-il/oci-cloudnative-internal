@@ -235,15 +235,16 @@ Fill out the following details:
 
 1. From terminal (On local computer – MacOS, Windows, Linux) enter the following command to change permission for the downloaded Private Key before SSH to the VM
 
-**CODE**
+
 ```bash
 chmod 700 ssh_private_key.key
+```
 
-2. From the terminal SSH to the VM by executing the following command:
+1. From the terminal SSH to the VM by executing the following command:
 
 ```bash
 ssh -i <path/to/private key/ssh_private_keyname> ubuntu@<PUBLIC_IP_OF_COMPUTE>
-
+```
 
 
 
@@ -253,6 +254,7 @@ ssh -i <path/to/private key/ssh_private_keyname> ubuntu@<PUBLIC_IP_OF_COMPUTE>
 
 ```bash
 oci setup config
+```
 
 ![oci config](./../../images/screenshot/1_18.png)
 
@@ -277,6 +279,7 @@ oci setup config
 7. Enter Region when prompted: 27 (eu-frankfurt-1)
 
 8. Generate API Keys as prompted:  
+```bash
 Do you want to generate a new RSA key pair? (If you decline you will be asked to supply the path to an existing key.) [Y/n]: Y  
 Enter a directory for your keys to be created [\Users\nadeem\.oci]:  
 Enter a name for your key [oci_api_key]:  
@@ -285,6 +288,7 @@ Enter a passphrase for your private key (empty for no passphrase): N/A
 Private key written to: \Users\nadeem\.oci\oci_api_key.pem  
 Fingerprint: b2:04:c3:ee:22:d0:85:83:b6:fa:24:9e:93:2f:c5:27  
 Config written to \Users\nadeem\.oci\config  
+```
 
 9. Copy public key  
 - Execute the following command:
@@ -294,6 +298,7 @@ ubuntu@instance-vm-oke:~$ cd .oci/
 ubuntu@instance-vm-oke:~/.oci$ ls
 config  oci_api_key.pem  oci_api_key_public.pem
 ubuntu@instance-vm-oke:~/.oci$ vi oci_api_key_public.pem
+```
 
 - Copy File: 
 
@@ -303,3 +308,5 @@ ubuntu@instance-vm-oke:~/.oci$ vi oci_api_key_public.pem
 
 ```bash
 :q
+  
+```
