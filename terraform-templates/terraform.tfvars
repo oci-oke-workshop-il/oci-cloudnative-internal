@@ -1,6 +1,6 @@
 # Only user-supplied inputs
 
-compartment_id = "ocid1.compartment.oc1..aaaaaaaafzetivmzrdwierzrv4t6wkctswoq4s7yxk762mbl3vlryeqprxeq"
+compartment_id = "ocid1.compartment.oc1"
 oci_cli_profile = "DEFAULT"
 region = "il-jerusalem-1"
 
