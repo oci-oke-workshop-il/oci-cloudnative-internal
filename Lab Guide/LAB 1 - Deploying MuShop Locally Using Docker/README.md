@@ -56,7 +56,7 @@ Click on **Infrastructure Dashboard** from the homepage.
 
 
 
-### 5. 👀 View Your VCN
+### 3. 👀 View Your VCN
 
 - Click **View VCN** on the bottom left of the wizard.
 
@@ -74,7 +74,7 @@ Click on **Infrastructure Dashboard** from the homepage.
 
 
 
-### 6. 📊 View Configured VCN Details
+### 4. 📊 View Configured VCN Details
 
 The following screen displays the full configuration of your **VCN**, including subnets, gateways, and other components.
 
