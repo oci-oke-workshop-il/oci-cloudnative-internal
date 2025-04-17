@@ -15,7 +15,7 @@ Begin by logging into your **OCI Dashboard** to retrieve the necessary configura
 
 ### 1. 🔐 Access Infrastructure Dashboard
 
-Once logged in, you’ll see a screen similar to the one below.  
+
 Click on **Infrastructure Dashboard** from the homepage.
 
 
