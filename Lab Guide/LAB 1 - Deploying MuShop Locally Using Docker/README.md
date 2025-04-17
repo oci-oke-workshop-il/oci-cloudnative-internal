@@ -391,7 +391,7 @@ Allow group <GroupName> to manage all-resources in tenancy <Tenancy Name>
 
 This task demonstrates how to build microservices code on the created VM, push them to OCI Container Registry, and run them using Docker Compose.
 
----
+
 
 ### 1. Create Container Registry
 
