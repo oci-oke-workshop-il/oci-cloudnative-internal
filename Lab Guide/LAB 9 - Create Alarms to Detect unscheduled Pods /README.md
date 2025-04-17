@@ -1,4 +1,4 @@
-### 🚨 LAB 9 – Create Alarms to Detect Unscheduled Pods
+###  LAB 9 – Create Alarms to Detect Unscheduled Pods
 
 ---
 

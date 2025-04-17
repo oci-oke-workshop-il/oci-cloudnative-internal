@@ -46,7 +46,7 @@ To allow the **Cluster Autoscaler Add-on** to manage node pool resources, you ne
 
 ```
 
-> **Replace**:
+>> **Replace**:
 -	`<cluster-ocid>` with the cluster OCID obtained previously.
 -	`<compartment-ocid>` with the cluster OCID obtained previously.
 -	`<dynamic-group-name>` with the Dymanic group created on **LAB 3 (Vault)**

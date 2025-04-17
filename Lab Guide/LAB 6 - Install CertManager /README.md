@@ -1,7 +1,7 @@
 ### 🔒 LAB 6 – Install CertManager
 
 
-#### 📘 What is CertManager?
+####  What is CertManager?
 
 **CertManager** is a native Kubernetes add-on that helps manage SSL/TLS certificates inside your Kubernetes cluster.  
 It automates the issuance, renewal, and management of certificates from various sources.

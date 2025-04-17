@@ -6,7 +6,7 @@ Taints and Tolerations are Kubernetes mechanisms used to control which pods can 
 # Taint:
 A taint is applied to a node. It marks that node as unsuitable for general workloads unless a pod tolerates the taint.
 
->> For example:
+>> **For example**:
 
 ```bash
 kubectl taint nodes my-node dedicated=test-taint:NoSchedule
