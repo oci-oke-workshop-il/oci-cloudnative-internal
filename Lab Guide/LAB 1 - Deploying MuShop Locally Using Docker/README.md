@@ -53,7 +53,8 @@ Click on **Infrastructure Dashboard** from the homepage.
 - Click **Next**
 - Validate that all the information is correct
 - Click **Create** to provision the VCN
-- 
+
+
 
 ### 5. 👀 View Your VCN
 
@@ -71,6 +72,8 @@ Click on **Infrastructure Dashboard** from the homepage.
 
 ![View VCN](./../../images/screenshot/1_5.png)
 
+
+
 ### 6. 📊 View Configured VCN Details
 
 The following screen displays the full configuration of your **VCN**, including subnets, gateways, and other components.
@@ -81,7 +84,9 @@ The following screen displays the full configuration of your **VCN**, including 
 
 ![VCN Configuration Overview](./../../images/screenshot/1_6.png)
 
-# 🔐 Task 3: Configure Security List for Public Access
+
+
+# 🧩 Task 3: Configure Security List for Public Access
 
 
 
@@ -114,7 +119,7 @@ In the **Add Ingress Rules** panel:
 Also confirm the **Egress Rule** allows traffic to:  
 - `0.0.0.0/0` _(default)_
 
-# 🔐 Task 4: Import Custom Image
+# 🧩 Task 4: Import Custom Image
 
 
 
@@ -161,7 +166,7 @@ Please wait until the image is **fully uploaded and processed** before proceedin
 
 
 
-# 🖥️ Task 5: Create a Compute Instance
+# 🧩 Task 5: Create a Compute Instance
 
 
 ### 1. ➕ Launch a New Instance
@@ -380,7 +385,7 @@ Allow group <GroupName> to manage all-resources in tenancy <Tenancy Name>
 
 
 
-# 🧩 Task 10: Running Containers Locally with Docker
+# 🧩 Task 9: Running Containers Locally with Docker
 
 ## Introduction
 
