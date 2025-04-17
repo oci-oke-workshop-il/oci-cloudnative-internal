@@ -39,7 +39,7 @@ This lab will guide you step-by-step to:
 
 1. 📧 **Validate that you received an email** in the following format from Oracle’s marketing and click the link for registration — or copy it into your browser.
 
-![Get Started Screenshot](./images/screenshot/Picture1.png)
+![Get Started Screenshot](./images/screenshot/1.png)
 
 
 
