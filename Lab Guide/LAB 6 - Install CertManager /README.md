@@ -161,7 +161,7 @@ kubectl apply -f mushop-dev-ingress.yaml
 kubectl get ingress mushop-dev -n mushop
 ```
 
-> Expected resaults after LoadBalancer deployment:
+> Expected results after LoadBalancer deployment:
      -   Ingress resource and an external IP
      -   Hostname
 
