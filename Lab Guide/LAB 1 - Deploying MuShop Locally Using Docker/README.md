@@ -19,8 +19,6 @@ Once logged in, you’ll see a screen similar to the one below.
 Click on **Infrastructure Dashboard** from the homepage.
 
 
-![OCI Home Page](./../../images/screenshot/1_1.png)
-
 ## 🧩 Task 2: Create a Virtual Cloud Network (VCN)
 
 
