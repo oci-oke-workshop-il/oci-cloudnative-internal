@@ -128,7 +128,7 @@ Kubectl get pods -n mushop
 ---
 
 #### Task 7: Revert replica size 
-1.	Execute the following command and validate that pods are terminated
+1.	Execute the following command and validate that pods are **terminated**
 ```bash
 
 kubectl scale deployment mymushop-api --replicas=1 -n mushop
