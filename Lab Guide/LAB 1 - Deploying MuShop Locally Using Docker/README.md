@@ -360,7 +360,7 @@ oci os ns get
 
   ![Add User to Group](./../../images/screenshot/1_29.png)
 
-  3. Create Policy  
+3. Create Policy  
 - Navigate to **Identity & Security > Domains > Policies > Create Policy**
 
 - Add Policy:  
@@ -437,7 +437,7 @@ docker login fra.ocir.io
 **Password:** Use the Auth Token generated in your profile settings.
 
 
-### 11. 🐳 Build and Deploy Using Docker
+# 🧩 Task 10:   Build and Deploy Using Docker
 
 1. Create a folder called `oci_workshop`:
 
@@ -448,15 +448,15 @@ cd oci_workshop
 
 2. Clone the GitHub repository:
 ```bash
-git clone https://github.com/oci-oke-workshop-il/oci-cloudnative-ext.git
+git clone https://github.com/oci-oke-workshop-il/oci-cloudnative-internal.git
 ```
 
 3. Navigate to the src folder and validate that the following microservices exist.
 
-![docker](./../../images/screenshot/1_33.png)
+![docker](./../../images/screenshot/1-33.png)
 
 
-### 4. 🛠️ Build Docker Images
+4. 🛠️ Build Docker Images
 
 - **Build Docker for the `api` microservice**:
 
@@ -484,13 +484,13 @@ docker push oci_region/registry-namespace/registry_name/name_of_docker_image:ver
 docker push fra.ocir.io/froqjg8h9ftr/oke_workshop/mushop_api:v1
 ```
 
-### 5. 🔁 Repeat for All Microservices
+5. 🔁 Repeat for All Microservices
 
 - **Repeat steps 4–6** for each image to ensure all microservices are uploaded.
 
 
 
-### 6. ✅ Validate Docker Images
+6. ✅ Validate Docker Images
 
 - **Run the following command** to verify all Docker images have been built:
 
