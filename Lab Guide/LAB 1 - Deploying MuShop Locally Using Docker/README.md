@@ -104,7 +104,7 @@ In the **VCN view**, navigate to:
 - In the **Default Security List** view, click on **Ingress Rules**
 - Then, click **Add Ingress Rules**
   
-  ### 3. ⚙️ Configure Rule Details
+### 3. ⚙️ Configure Rule Details
 
 In the **Add Ingress Rules** panel:
 
