@@ -105,7 +105,7 @@ sed -i "s/\${compartment_ocid}/<Replace-with-Compartment-OCID>/g" *.json
 
 ---
 
-#### Task 3: Review OKE Metrics
+#### Task 4: Review OKE Metrics
 
 1.	OKE Cluster Metrics: **Navigate to Developer Services > Kubernetes Clusters >**
 2. Under Resources -> Metrics observe the following metrics:
