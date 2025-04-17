@@ -1,6 +1,6 @@
 ## LAB 2 – Deploy OKE Cluster with Terraform
 
-### 🧭 Introduction
+###  Introduction
 
 You will take on the persona of an **Operations Engineer**. You will initiate the Oracle Cloud environment that will be used to create and deploy your microservices applications.
 
@@ -8,7 +8,7 @@ This environment will be contained within a **cloud Compartment**, and communica
 
 
 
-### 🧩 Task 1: Go to Terraform Directory
+###  Task 1: Go to Terraform Directory
 
 1. **Change directory** to the `Terraform-templates` folder within the cloned repository:
 
@@ -20,7 +20,7 @@ cd oci-cloudnative-ext/Terraform-templates
 
 ---
 
-### 🧩 Task 2: Edit `terraform.tfvars`
+###  Task 2: Edit `terraform.tfvars`
 
 1. 	Open `terraform.tfvars` using a text editor:
 
@@ -53,7 +53,7 @@ region = "il-jerusalem-1"
 
 ---
 
-### 🧩 Task 4: Apply Terraform Configuration to deploy OKE Cluster 
+###  Task 4: Apply Terraform Configuration to deploy OKE Cluster 
 
 1. Initialize the directory with command: 
 
@@ -87,7 +87,7 @@ terraform apply
 
 ---
 
-### 🧩 Task 5: Validate Successful Deployment 
+###  Task 5: Validate Successful Deployment 
 
 1.	Navigate to Developer Services > Kubernetes Clusters (OKE) > Click Cluster name > Review **cluster details** 
 

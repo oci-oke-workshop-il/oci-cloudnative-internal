@@ -8,7 +8,7 @@
 - **Metrics** – Measure system health and performance
 - **Traces** – Track requests across services
 
-Together, these provide deep visibility into your deployment and help with proactive troubleshooting and optimization.
+Together, these provide deep visibility into your deployment and help with proactive troubleshooting and optimization
 
 > ✅ **Pre-requisites**: Ensure **OCI CLI** and **Kubectl** are installed and configured.
 

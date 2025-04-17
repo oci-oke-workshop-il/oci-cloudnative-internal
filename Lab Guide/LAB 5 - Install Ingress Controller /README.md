@@ -1,4 +1,4 @@
-### 🧪 LAB 5 - Install Ingress Controller 
+###  LAB 5 - Install Ingress Controller 
 
 #### Prerequisites : Running Kubernetes cluster , kubectl , Helm installed.
 

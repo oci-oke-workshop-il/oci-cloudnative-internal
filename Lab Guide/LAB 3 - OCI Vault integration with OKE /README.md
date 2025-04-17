@@ -1,6 +1,6 @@
 ### 🔐 LAB 3 – OCI Vault Integration with OKE
 
-#### 🧩 Introduction
+####  Introduction
 This lab outlines the required configuration steps to integrate the **OCI Vault** service with other **OCI services** (Oracle Autonomous Database).
 
 ---

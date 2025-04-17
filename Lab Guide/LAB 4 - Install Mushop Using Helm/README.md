@@ -1,6 +1,6 @@
-### 🧪 LAB 4 – Install MuShop Using Helm
+###  LAB 4 – Install MuShop Using Helm
 
-#### 🧩 Introduction
+#### Introduction
 
 There are four options for deploying **MuShop**.  
 They range from **manual (Docker)** to **automated (Helm)** and **fully automated (Terraform)**.

@@ -8,22 +8,22 @@ This is the first step in exploring Oracle Cloud Native tools and microservices.
 
 
 
-## 🧩 Task 1: Log in to Your OCI Tenancy
+##  Task 1: Log in to Your OCI Tenancy
 
 Begin by logging into your **OCI Dashboard** to retrieve the necessary configuration and resource details.
 
 
-### 1. 🔐 Access Infrastructure Dashboard
+### 1.  Access Infrastructure Dashboard
 
 
 Click on **Infrastructure Dashboard** from the homepage.
 
 ---
 
-## 🧩 Task 2: Create a Virtual Cloud Network (VCN)
+##  Task 2: Create a Virtual Cloud Network (VCN)
 
 
-### 1. 🌐 Set Up a New VCN
+### 1.  Set Up a New VCN
 
 - Go to **Networking** in the OCI sidebar
 - Navigate to **Virtual Cloud Networks**
@@ -34,7 +34,7 @@ Click on **Infrastructure Dashboard** from the homepage.
 
 ![Start VCN Wizard](./../../images/screenshot/1_2.png)
 
-### 2. 🛠️ Enter VCN Configuration Details
+### 2.  Enter VCN Configuration Details
 
 - **VCN Name**: `okeworkshop`
 - **Compartment**: Choose the **root compartment**
@@ -57,7 +57,7 @@ Click on **Infrastructure Dashboard** from the homepage.
 
 
 
-### 3. 👀 View Your VCN
+### 3.  View Your VCN
 
 - Click **View VCN** on the bottom left of the wizard.
 
@@ -75,7 +75,7 @@ Click on **Infrastructure Dashboard** from the homepage.
 
 
 
-### 4. 📊 View Configured VCN Details
+### 4.  View Configured VCN Details
 
 The following screen displays the full configuration of your **VCN**, including subnets, gateways, and other components.
 
@@ -87,11 +87,11 @@ The following screen displays the full configuration of your **VCN**, including 
 
 ---
 
-# 🧩 Task 3: Configure Security List for Public Access
+#  Task 3: Configure Security List for Public Access
 
 
 
-### 1. 🛡️ Access the Default Security List
+### 1.  Access the Default Security List
 
 In the **VCN view**, navigate to:
 
@@ -122,11 +122,11 @@ Also confirm the **Egress Rule** allows traffic to:
 
 ---
 
-# 🧩 Task 4: Import Custom Image
+#  Task 4: Import Custom Image
 
 
 
-### 1. 🧭 Navigate to Custom Images
+### 1.  Navigate to Custom Images
 
 In the OCI Console:
 
@@ -169,7 +169,7 @@ Please wait until the image is **fully uploaded and processed** before proceedin
 
 ---
 
-# 🧩 Task 5: Create a Compute Instance
+#  Task 5: Create a Compute Instance
 
 
 ### 1. ➕ Launch a New Instance
@@ -178,7 +178,7 @@ Please wait until the image is **fully uploaded and processed** before proceedin
 
 
 
-### 2. 📝 Configure Instance Settings
+### 2.  Configure Instance Settings
 
 Fill out the following details:
 
@@ -240,7 +240,7 @@ Fill out the following details:
 
 ---
 
-# 🧩 Task 6: Connect the VM via SSH
+#  Task 6: Connect the VM via SSH
 
 1. From terminal (On local computer – MacOS, Windows, Linux) enter the following command to change permission for the downloaded Private Key before SSH to the VM
 
@@ -258,7 +258,7 @@ ssh -i <path/to/private key/ssh_private_keyname> ubuntu@<PUBLIC_IP_OF_COMPUTE>
 ---
 
 
-# 🧩 Task 7: Configure OCI CLI on VM
+#  Task 7: Configure OCI CLI on VM
 
 1. Execute the following command on the VM for OCI CLI setup:
 
@@ -349,7 +349,7 @@ oci os ns get
 
 ---
 
-# 🧩 Task 8: Set Up Policy to Manage OCI Resources
+#  Task 8: Set Up Policy to Manage OCI Resources
 
 1. Navigate to **Identity & Security > Domains** > Click **Default** > **Groups** > Click **Create Group** and add user to the group
 
@@ -391,7 +391,7 @@ Allow group <GroupName> to manage all-resources in tenancy <Tenancy Name>
 
 
 
-# 🧩 Task 9: Running Containers Locally with Docker
+#  Task 9: Running Containers Locally with Docker
 
 ## Introduction
 
@@ -430,7 +430,7 @@ This task demonstrates how to build microservices code on the created VM, push t
 docker login <region_code>.ocir.io
 ```
 
-### 🔐 Docker Login – Frankfurt Region Example
+###  Docker Login – Frankfurt Region Example
 
 - To log in to the OCI Container Registry for Frankfurt, use the following command:
 
@@ -444,7 +444,7 @@ docker login fra.ocir.io
 
 ---
 
-# 🧩 Task 10:   Build and Deploy Using Docker
+#  Task 10:   Build and Deploy Using Docker
 
 1. Create a folder called `oci_workshop`:
 
@@ -497,7 +497,7 @@ docker push fra.ocir.io/froqjg8h9ftr/oke_workshop/mushop_api:v1
 
 
 
-6. ✅ Validate Docker Images
+6.  Validate Docker Images
 
 - **Run the following command** to verify all Docker images have been built:
 

@@ -33,11 +33,11 @@ This lab will guide you step-by-step to:
 
 
 
-## 📝 Task 1: Create Your Free Trial Account
+##  Task 1: Create Your Free Trial Account
 
 > If you already have a cloud account, skip to **Task 2**.
 
-1. 📧 **Validate that you received an email** in the following format from Oracle’s marketing and click the link for registration — or copy it into your browser.
+1.  **Validate that you received an email** in the following format from Oracle’s marketing and click the link for registration — or copy it into your browser.
 
 ![Get Started Screenshot](./../../images/screenshot/1.png)
 
@@ -47,13 +47,13 @@ This lab will guide you step-by-step to:
 
 ![Oracle Cloud Registration Page](./../../images/screenshot/2.png)
 
-4. 📝 Enter the following information to create your **Oracle Cloud Free Tier** account:
+4.  Enter the following information to create your **Oracle Cloud Free Tier** account:
 
    - 🌍 Choose your **Country**
    - ✍️ Enter your **Name and Email**
    - ✅ Use **hCaptcha** to verify your identity
 
-5. 📧 Once you’ve entered a valid email address, click the **Verify my email** button.  
+5.  Once you’ve entered a valid email address, click the **Verify my email** button.  
    The next screen will appear — click **Select Offer** to proceed.
 
 
@@ -63,19 +63,19 @@ After clicking **Verify my email**, wait for the **"Email verification link sent
 
 ![Email](./../../images/screenshot/4.png)
 
-6. 📬 Check Your Email for Validation Link
+6.  Check Your Email for Validation Link
 
 Go to your inbox. You will receive an **account validation email** from Oracle.  
 The email will be similar to the one shown below:
 
 ![Oracle Validation Email](./../../images/screenshot/5.png)
 
-7. 🔐 Click "Verify email"
+1. Click "Verify email"
 
 After receiving the verification email, click the **Verify email** button to proceed.
 
 
-8. 📝 Complete Your Account Information
+8.  Complete Your Account Information
 Fill out the following details to create your **Oracle Cloud Free Tier** account:
 
 - 🔑 **Choose a Password**
@@ -90,7 +90,7 @@ Fill out the following details to create your **Oracle Cloud Free Tier** account
 
 ![Account Setup Page](./../../images/screenshot/6.png)
 
-9. 🏠 Enter Your Address Information
+9. Enter Your Address Information
 
 Enter your address details:  
 - Select your **Country**
@@ -103,7 +103,7 @@ Then, click **Continue**.
 
 
 
-## 10. 💳 Add Payment Verification Method
+## 10.  Add Payment Verification Method
 
 Click the **Add payment verification method** button to continue the registration process.
 
@@ -131,7 +131,7 @@ Once your **payment verification** is complete:
 
 ![Start Free Trial](./../../images/screenshot/10.png)
 
-## 13. ⏳ Account Provisioning
+## 13. Account Provisioning
 
 Your account is now **provisioning** and should be available soon!
 
@@ -142,7 +142,7 @@ This email will include your **cloud account name** and **username**.
 
 
 
-# 🧩 Task 2: Sign In to Your Oracle Cloud Account
+# Task 2: Sign In to Your Oracle Cloud Account
 
 
 
@@ -151,7 +151,7 @@ This email will include your **cloud account name** and **username**.
 
 
 
-## 1. 🔐 Sign in via Oracle Cloud
+## 1.  Sign in via Oracle Cloud
 
 - Go to [**cloud.oracle.com**](https://cloud.oracle.com)
 - Enter your **Cloud Account Name** and click **Next**
@@ -161,14 +161,14 @@ This email will include your **cloud account name** and **username**.
 
 ![Oracle Cloud Login](./../../images/screenshot/11.png)
 
-## 2. 🔄 Continue with Oracle Identity Service
+## 2.  Continue with Oracle Identity Service
 
 Click **Continue** to sign in using the _"oraclecloudidentityservice"_ authentication provider.
 
 
 ![Identity Service Login](./../../images/screenshot/12.png)
 
-## 3. 🔑 Enter Your Credentials and Sign In
+## 3.  Enter Your Credentials and Sign In
 
 When you sign up for an Oracle Cloud account, a user is automatically created for you in **Oracle Identity Cloud Service** with the username and password you selected.
 
@@ -176,7 +176,7 @@ You can use this **single sign-on** option to access Oracle Cloud Infrastructure
 This user has **administrator privileges** for all the services included with your account.
 
 
-### 🧾 Sign-In Instructions
+###  Sign-In Instructions
 
 - Enter your **Cloud Account username** → _(this is your email address)_
 - Enter your **password** → _(the one you created during sign-up)_
@@ -185,7 +185,7 @@ This user has **administrator privileges** for all the services included with yo
 
 ![Cloud Account Sign-In](./../../images/screenshot/13.png)
 
-## 4. 🛡️ Enable Secure Verification
+## 4.  Enable Secure Verification
 
 You will be prompted to enable **Secure Verification**.
 
@@ -196,7 +196,7 @@ For more details, refer to the [Managing Multifactor Authentication documentatio
 
 ![Secure Verification](./../../images/screenshot/14.png)
 
-## 5. 📲 Choose Verification Method
+## 5.  Choose Verification Method
 
 Select a method to enable secure verification:
 
@@ -206,7 +206,7 @@ Select a method to enable secure verification:
 
 ![Select Verification Method](./../../images/screenshot/15.png)
 
-## 6. 📱 Set Up Authentication via Mobile App
+## 6.  Set Up Authentication via Mobile App
 
 Choose **Mobile App** as your verification method.  
 Follow the steps shown in the screenshot to complete the authentication setup.
@@ -223,7 +223,7 @@ Welcome to your Oracle Cloud dashboard 🚀
 
 ![Oracle Cloud Dashboard](./../../images/screenshot/17.png)
 
-## 8. 🔁 Alternate View: Navigate to OCI Console
+## 8.  Alternate View: Navigate to OCI Console
 
 In case you see a different view after signing in, follow these steps:
 
