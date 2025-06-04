@@ -143,7 +143,7 @@ Fill out the following:
 - ✅ Enable: **Import from an Object Storage URL**
 - **Object Storage URL**:  
 
-https://objectstorage.uk-london-1.oraclecloud.com/p/2o164n0KlkY--neE-r78QVLUySU1ELPfxPB4cPhKTaApNEDzQzhWm86En4aFGaaR/n/oraseemeail/b/bucket-oke-workshop/o/exported-image-20241117-1641
+https://objectstorage.uk-london-1.oraclecloud.com/p/zL66HK0sDtwlftpRlzPTxzEJbCYUoLW8llXWBhsYtOdkuwTSl0LidHKVUXzykudX/n/oraseemeail/b/bucket-oke-workshop/o/exported-image-20241117-1641
 
 
 - **Image Type**: VMDK (default)
