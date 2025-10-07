@@ -25,6 +25,7 @@ To allow the **Cluster Autoscaler Add-on** to manage node pool resources, you ne
 2.	Create the policy 
 
 - **Navigate to Identity & Security > Policies > Create Policy**
+
   ![Public Key Added](./../../images/screenshot/Lab7/3.png)
 
 - Fill the policy name  `cluster-autoscaler-policy`

@@ -56,7 +56,7 @@ Replace `<Dynamic-group-name>` with the newly created dynamic group and `<compar
 
 1.	In OCI console Navigate to the **Developer Services > Kubernetes clusters (OKE)**.
 2.	Choose the **OKE cluster** you have previously created with terraform. 
-3.	Follow the instruction for **Quick Access > Local Accsess** > Do the Action from the VM
+3.	Under Action tab in click on **Access cluster > Local Accsess** > Follow the instruction, please make sure that you execute the comands from the VM
 
 ![Public Key Added](./../../images/screenshot/Lab3/4.png)
 
@@ -153,6 +153,8 @@ kubectl get secretstore -A
 > **Do not close this window yet!**
 
 - Go to previous **Section** and use the copied **TNS name** to fill the **Secret Type Template** and Finish the Tasks to create the `oadb-connection`
+
+**Note** If you has been closed the section, you need to open the Vault that we created previusly and under the **Version** click on the lates secret, click on the 3 dots to view the secret content 
 
 ```bash
 #Example 

@@ -27,7 +27,7 @@ Click on **Infrastructure Dashboard** from the homepage.
 
 - Go to **Networking** in the OCI sidebar
 - Navigate to **Virtual Cloud Networks**
-- Click **Start VCN Wizard**
+- Click **Action** -> **Start VCN Wizard**
 - Select **VCN with Internet Connectivity**
 - Click **Start VCN Wizard** to begin the creation process
 
@@ -95,14 +95,14 @@ The following screen displays the full configuration of your **VCN**, including 
 
 In the **VCN view**, navigate to:
 
-- **Resources** > **Security Lists**
+-  **Security**
 - Click on the **Default Security List** for your VCN ( `<VCN Name>`)
 
 ![Access Default Security List](./../../images/screenshot/1_7.png)
 
 ### 2. ➕ Add Ingress Rules
 
-- In the **Default Security List** view, click on **Ingress Rules**
+- In the **Default Security List** view, click on **Security Rules**
 - Then, click **Add Ingress Rules**
   
 ### 3. ⚙️ Configure Rule Details
@@ -208,7 +208,8 @@ Fill out the following details:
 ![Create Compute Instance](./../../images/screenshot/1_13.png)
 
 
-- **Network Settings (Primary VNIC information)**:
+- **Now Click on the next to the ** -> **Networking (Primary VNIC information)**:
+  - **VNIC_name** – Type the name for VNIC like "OKE_WORKSHOP" 
   - **Primary network** – Select **existing virtual cloud network** > Choose the **VCN created in Task 2**
   - **Subnet** – Select **existing subnet** > Choose the **Public Subnet created in Task 2**
   
@@ -322,10 +323,10 @@ ubuntu@instance-vm-oke:~/.oci$ vi oci_api_key_public.pem
 ```
 
 10. Upload Public key  
-- In the OCI Console Navigate to **User Setting** > Click **API keys** > **Add API key**
+- In the OCI Console Navigate to **User Setting** > Click **Tokens and keys** > **Add API key**
 
 
-![Upload Public Key](./../../images/screenshot/1_23.png)
+![Upload Public Key](./../../images/s1_creenshot/1_23.png)
 
 - Choose **Paste a public key** > Paste the public key copied earlier
 
@@ -356,7 +357,7 @@ oci os ns get
 
 ![Create Group](./../../images/screenshot/1_27.png)
 
-2. Create Group
+2. Create Group - under User Managment section 
 
 
 ![Create Group Form](./../../images/screenshot/1_28.png)
