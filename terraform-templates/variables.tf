@@ -104,8 +104,15 @@ variable "adb_admin_password" {
   type = string
 }
 
-variable "adb_cpu_core_count" {
-  type = number
+variable "adb_compute_model" {
+  type        = string
+  description = "Compute model for ADB (ECPU or OCPU)"
+  default     = "ECPU"
+}
+
+variable "adb_compute_count" {
+  type        = number
+  description = "Number of ECPUs when using ECPU"
 }
 
 variable "adb_data_storage_size_in_tbs" {

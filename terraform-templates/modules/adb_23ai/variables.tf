@@ -25,10 +25,16 @@ variable "are_primary_whitelisted_ips_used" {
   default     = true
 }
 
-variable "cpu_core_count" {
-  type        = number
-  description = "The number of OCPU cores to be made available to the database"
+
+variable "compute_model" {
+  type    = string
+  default = "ECPU"
 }
+
+variable "compute_count" {
+  type = number
+}
+
 
 variable "data_storage_size_in_tbs" {
   type        = number

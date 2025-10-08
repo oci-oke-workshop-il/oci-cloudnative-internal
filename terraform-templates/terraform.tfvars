@@ -30,15 +30,16 @@ freeform_tags = {
 }
 
 # ADB variables
-adb_name                   = "myadb23ai"
-adb_display_name           = "My ADB AI"
-adb_admin_password         = "ComplexPassword123!"
-adb_cpu_core_count         = 1
+adb_name                     = "myadb23ai"
+adb_display_name             = "My ADB AI"
+adb_admin_password           = "ComplexPassword123!"
+adb_compute_model            = "ECPU"
+adb_compute_count            = 8
 adb_data_storage_size_in_tbs = 1
-adb_is_free_tier           = false
-adb_license_model          = "BRING_YOUR_OWN_LICENSE"
-adb_whitelisted_ips        = ["203.0.113.0/24", "198.51.100.0/24"]
-adb_customer_contact_email = "admin@example.com"
+adb_is_free_tier             = false
+adb_license_model            = "BRING_YOUR_OWN_LICENSE"
+adb_whitelisted_ips          = ["203.0.113.0/24", "198.51.100.0/24"]
+adb_customer_contact_email   = "admin@example.com"
 
 # Vault variables
 vault_name            = "MyOKEVault"
