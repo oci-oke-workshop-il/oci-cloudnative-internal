@@ -326,7 +326,7 @@ ubuntu@instance-vm-oke:~/.oci$ vi oci_api_key_public.pem
 - In the OCI Console Navigate to **User Setting** > Click **Tokens and keys** > **Add API key**
 
 
-![Upload Public Key](./../../images/s1_creenshot/1_23.png)
+![Upload Public Key](./../../images/screenshot/1_23.png)
 
 - Choose **Paste a public key** > Paste the public key copied earlier
 
