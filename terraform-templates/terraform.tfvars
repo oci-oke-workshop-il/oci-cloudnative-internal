@@ -17,7 +17,7 @@ api_endpoint_subnet_cidr = "10.0.0.0/28"
 
 # OKE variables
 cluster_name                = "oke-workshop"
-kubernetes_version          = "v1.30.1"
+kubernetes_version          = "v1.34.1"
 node_pool_name              = "pool1"
 node_pool_shape             = "VM.Standard.E4.Flex"
 node_pool_node_ocpus        = 1
