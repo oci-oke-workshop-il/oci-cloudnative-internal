@@ -208,14 +208,14 @@ Fill out the following details:
 ![Create Compute Instance](./../../images/screenshot/1_13.png)
 
 
-- **Now Click on the next to the ** -> **Networking (Primary VNIC information)**:
+**Now Click on the next to the** -> **Networking (Primary VNIC information)**:
   - **VNIC_name** – Type the name for VNIC like "OKE_WORKSHOP" 
   - **Primary network** – Select **existing virtual cloud network** > Choose the **VCN created in Task 2**
   - **Subnet** – Select **existing subnet** > Choose the **Public Subnet created in Task 2**
   
 ![Create Compute Instance](./../../images/screenshot/1_14.png)
 
-- **Note**: Validate the **Compartment name** if the VCN/Subnet is not visible in the drop-down list
+**Note**: Validate the **Compartment name** if the VCN/Subnet is not visible in the drop-down list
 
   - **Primary VNIC IP addresses**:
     - **Private IPv4 address** → Checkbox: _Automatically assign private IPv4 address (default)_
