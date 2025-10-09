@@ -119,7 +119,7 @@ kubectl describe pod <add pod name>  -n mushop
 #### Task 6: Validate replica size and new node were created in the nodepool
 1.	In the CLI  Execute the following command:
 ```bash
-Kubectl get pods -n mushop
+kubectl get pods -n mushop
 ```
 
 2.	In OCI console navigate to **Developer services > Kubernetes Clusters (OKE) > click Cluster Name > click Node pools > click Node pool name > validate the number of Nodes > 3**
@@ -141,5 +141,7 @@ kubectl scale deployment mymushop-api --replicas=1 -n mushop
 
 #### Task 8: validate # pod revert to the original count
 ```bash
+
 kubectl get pods -n mushop
+
  ```

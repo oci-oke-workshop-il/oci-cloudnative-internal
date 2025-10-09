@@ -67,7 +67,7 @@ git clone https://github.com/oci-oke-workshop-il/oci-cloudnative-ext.git
 2.	Execute the following commad
 ```bash
 
-cd oci- cloudnative-ext/dashboards_json
+cd oci-cloudnative-ext/dashboards_json
 ```
 
 3.	Obtain  the OCID of the compartment, where the dashboards need to be imported (same as the OKE cluster’s compartment).

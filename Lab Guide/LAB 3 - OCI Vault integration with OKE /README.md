@@ -47,7 +47,15 @@ Allow dynamic-group <Dynamic-group-name> to manage secret-family in compartment 
 ```
 > **Notes**:  
 Replace `<Dynamic-group-name>` with the newly created dynamic group and `<compartment-ocid>` with the root compartment ocid for the purpose of this lab.
+If you have only Root compartment (tenancy) the syntax must be: 
 
+```bash
+
+Allow dynamic-group <Dynamic-group-name> to read secret-bundles in tenancy
+Allow dynamic-group <Dynamic-group-name> to use keys in tenancy
+Allow dynamic-group <Dynamic-group-name> to manage secret-family in tenancy
+
+```
 3.	Click **Create**
 
 ---
@@ -88,7 +96,7 @@ spec:
   provider:
     oracle:
       vault: <vault-OCID> #Replace <vault-OCID> with the Vault ocid created by the terraform
-      region: eu-frankfurt-1
+      region: eu-frankfurt-1 #Replace with your region
 
 ```
 

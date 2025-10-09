@@ -19,7 +19,7 @@ tags:
   atp: true
 
 ingress:
-  enabled: true
+  enabled: false
 
 api:
   enabled: true
