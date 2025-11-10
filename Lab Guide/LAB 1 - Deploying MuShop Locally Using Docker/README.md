@@ -164,7 +164,7 @@ https://objectstorage.uk-london-1.oraclecloud.com/p/zL66HK0sDtwlftpRlzPTxzEJbCYU
 ### ⏳ Wait for Image Upload to Complete
 
 After clicking **Import Image**, the upload process will begin.  
-Please wait until the image is **fully uploaded and processed** before proceeding to Task 5.
+Please wait until the image is **will turn to status Available** before proceeding to Task 5.
 
 
 ---
@@ -372,13 +372,12 @@ oci os ns get
 
 - Add Policy:  
 ```text
-Allow group <GroupName> to manage all-resources in tenancy <Tenancy Name>
+Allow group <GroupName> to manage all-resources in compartment <CompartmentName>
 ```
 > 🔧 **Change the view to:** Manual Builder
 
 **Notes:**
-- Replace `<GroupName>` with the newly created group  
-- Replace `<CompartmentName>` with the root compartment name for the purpose of this lab  
+- Replace `<GroupName>` with the newly yore compartment name for the purpose of this lab  
 
 ⚠️ This policy is broad for simplicity, consider refining it for real-world usage.
 
@@ -439,8 +438,8 @@ docker login <region_code>.ocir.io
 docker login fra.ocir.io
 ```
 
-**Username format:** `<registry-namespace>/default/<username>`  
-**Example:** `froqjg8h9ftr/default/user@domain.com`  
+**Username format:** `<registry-namespace>/default/<username>`  the registry name you can find in the Conatainer Registry details page. 
+**Example:** `froqjg8h9ftr/default/user_email`  
 **Password:** Use the Auth Token generated in your profile settings.
 
 ---
@@ -466,7 +465,7 @@ git clone https://github.com/oci-oke-workshop-il/oci-cloudnative-internal.git
 
 4. 🛠️ Build Docker Images
 
-- **Build Docker for the `api` microservice**:
+- **Build Docker for the `api` microservice from the folder /src/api/**  :
 
 ```bash
 docker build -t give_name_of_docker_image:version .
@@ -481,7 +480,7 @@ docker build -t mushop_api:v1 .
 docker tag give_name_of_docker_image:version oci_region/registry_namespace/registry_name/name_of_docker_image:version 
 
 # Example: 
-docker tag mushop_api:v1 fra.ocir.io/froqjg8h9ftr/oke_workshop/mushop_assets:v1
+docker tag mushop_api:v1 fra.ocir.io/froqjg8h9ftr/oke_workshop/mushop_api:v1
 ```
 - **Push Docker images to the OCI container registry as follow**:
 
@@ -492,7 +491,7 @@ docker push oci_region/registry-namespace/registry_name/name_of_docker_image:ver
 docker push fra.ocir.io/froqjg8h9ftr/oke_workshop/mushop_api:v1
 ```
 
-5. 🔁 Repeat for All Microservices
+1. 🔁 Repeat for  Microservices API, Assets, Carts
 
 - **Repeat steps 4–6** for each image to ensure all microservices are uploaded.
 
