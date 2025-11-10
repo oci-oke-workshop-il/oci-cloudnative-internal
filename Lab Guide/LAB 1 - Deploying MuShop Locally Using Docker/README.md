@@ -390,7 +390,6 @@ Allow group <GroupName> to manage all-resources in compartment <CompartmentName>
 
 
 
-
 #  Task 9: Running Containers Locally with Docker
 
 ## Introduction
@@ -399,13 +398,13 @@ This task demonstrates how to build microservices code on the created VM, push t
 
 
 
-### 1. Create Container Registry
+### 1. Create Container Registry per Microservice ( API, Assets, Carts )
 
 - Navigate to **Developer Services > Container Registry**  
 - Click **Create Repository**  
 - Select the **root compartment**  
 - Set **Access Type** to **Public**  
-- Specify a **Repository Name**  
+- Specify a **Repository Name**  for example:  mushop_api, mushop_assets, mushop_carts
 - Click **Create**
 
 
