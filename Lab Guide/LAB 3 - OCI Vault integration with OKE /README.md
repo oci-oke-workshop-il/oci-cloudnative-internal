@@ -64,7 +64,7 @@ Allow dynamic-group <Dynamic-group-name> to manage secret-family in tenancy
 
 1.	In OCI console Navigate to the **Developer Services > Kubernetes clusters (OKE)**.
 2.	Choose the **OKE cluster** you have previously created with terraform. 
-3.	Under Action tab in click on **Access cluster > Local Accsess** > Follow the instruction, please make sure that you execute the comands from the VM
+3.	Under Action tab in click on **Access cluster > Local Accsess** > Follow the instruction, please make sure that you execute the comands from the VM ( Please note you need to reffer only to PUBLIC ENDPOINT)
 
 ![Public Key Added](./../../images/screenshot/Lab3/4.png)
 
@@ -236,7 +236,7 @@ unzip XXXX.zip
 
 ```bash
 
-apiVersion: external-secrets.io/v1beta1
+apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
   name: oci-secret-admin
@@ -260,7 +260,7 @@ spec:
 
 ```bash
 
-apiVersion: external-secrets.io/v1beta1
+apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
   name: oci-secret-connection
@@ -283,7 +283,7 @@ spec:
 
 ```bash
 
-apiVersion: external-secrets.io/v1beta1
+apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
   name: oci-secret-wallet
