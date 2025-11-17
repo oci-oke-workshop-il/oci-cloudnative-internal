@@ -65,7 +65,7 @@ vi letsencrypt-prod-clusterissuer.yaml
 ```
 
 
-2.	Enter the following: 
+2.	Enter the following, Please replace the email your-email@example.com with your email address : 
 
 ```bash
 apiVersion: cert-manager.io/v1
