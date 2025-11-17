@@ -220,7 +220,7 @@ unzip XXXX.zip
 
 - Update the `oadb-wallet` file: **Copy the path of the directory where you save the unzipped files (execute the command pwd)**. 
 
-- Create `oadb- wallet` secret as follow: 
+- Create `oadb-wallet` secret as follow: 
 
       - Name: `oadb-wallet` 
       - Compartment: `Use the root for the purpose of this lab`
