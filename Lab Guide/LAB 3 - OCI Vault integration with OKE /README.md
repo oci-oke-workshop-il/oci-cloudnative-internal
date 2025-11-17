@@ -139,9 +139,9 @@ kubectl get secretstore -A
       - Encryption Key: `Same as previous secret`
       - Secret Type Template: `< plain-text > `
       - Secrets contents: `Replace this value with the value of the adb-tnsname` **(refer to next section Obtain the adb-tnsname  to identify the value)**
-      - Create secret: **Click it when you finished to fill the information above**
-      Please See the Example of the oadb-conncetion secret, TO FIND THE VALUES Follow guide bellow
-      ![Public Key Added](./../../images/screenshot/Lab3/21.png)
+      - Create secret: **Click CREATE SECRET when you finished to fill the information above**
+      
+Use the same value as before **oadb_wallet_pw** and follow the guide where to find the **oadb_service**: 
 
 -	Obtain the `adb-tnsname`
       -  Duplicate the OCI portal window > Navigate to the **Search bar** and search for : Autonomous transaction
@@ -162,7 +162,9 @@ kubectl get secretstore -A
 
 > **Do not close this window yet!**
 
-- Go to previous **Section** and use the copied **TNS name** to fill the **Secret Type Template** and Finish the Tasks to create the `oadb-connection`
+- Go to previous **Section oadb-connection creation tab** and use the copied **TNS name** to fill the **Secret Type Template** and Finish the Tasks to create the `oadb-connection`
+Please See the Example of the oadb-conncetion secret: 
+![Public Key Added](./../../images/screenshot/Lab3/21.png)
 
 **Note** If you has been closed the section, you need to open the Vault that we created previusly and under the **Version** click on the lates secret, click on the 3 dots to view the secret content 
 
