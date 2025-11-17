@@ -44,7 +44,7 @@ cd oci-cloudnative-internal/deploy/complete/helm-chart/mushop/charts
 
 ### Task 3: Update the Image Repository
 
-In this Task we will Update the image repository in the `values.yaml` files for the following microservices -  **API, Storefront & Catalogue** . 
+In this Task we will Update the image repository in the `values.yaml` files for the follow microservice -  **API**  
 
 The new value must point to the container repository previously created in **Lab 1**
 
