@@ -48,7 +48,7 @@ In this Task we will Update the image repository in the `values.yaml` files for 
 
 The new value must point to the container repository previously created in **Lab 1**
 
-1.	Enter every folder in `helm-chart/mushop/charts` , For example  `/api`.
+1.	Enter folder `helm-chart/mushop/charts/api` 
 2.	Open the `values.yaml` file.
 3.	Update the `image.repository` field with the full path of the container repository created previously.
 4.	Update the Tag for the image that you pushed previusly, For example v1
