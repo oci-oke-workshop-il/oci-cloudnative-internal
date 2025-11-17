@@ -207,7 +207,7 @@ oci os object bulk-download --bucket-name <BUCKET NAME> --download-dir <The DIR 
 
 #Example:
 
-oci os object bulk-download --bucket-name my-bucket --download-dir
+oci os object bulk-download --bucket-name my-bucket --download-dir wallet-folder
 
 ```
 
@@ -323,7 +323,7 @@ kubectl apply -f oadb-wallet-secret.yaml
 1.	Execute the following commands:
 
 ```bash
-kubectl get es
+kubectl get es -A
 ```
 
 
