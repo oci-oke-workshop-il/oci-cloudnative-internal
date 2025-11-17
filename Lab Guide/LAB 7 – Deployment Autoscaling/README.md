@@ -65,7 +65,7 @@ To allow the **Cluster Autoscaler Add-on** to manage node pool resources, you ne
 2.	For this lab Replace :
    - `<min-nodes>` = 1 , The minimum number of nodes allowed in the node pool. The Kubernetes Cluster Autoscaler will not reduce the number of nodes below this number.
    - `<max-nodes>` = 5 , The maximum number of nodes allowed in the node pool. The Kubernetes Cluster Autoscaler will not increase the number of nodes above this number. Make sure the maximum number of nodes you specify does not exceed the tenancy limits for the worker node shape defined for the node pool.
-o	<nodepool-ocid> with the node pool OCIDs.
+	- `<nodepool-ocid>` with the node pool OCIDs.
 
 ---
 
