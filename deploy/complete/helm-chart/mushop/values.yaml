@@ -46,7 +46,7 @@ payment:
   enabled: true
 
 session:
-  enabled: true
+  enabled: false
 
 storefront:
   enabled: true
@@ -55,7 +55,7 @@ fulfillment:
   enabled: true
 
 nats:
-  enabled: true
+  enabled: false
 
 user:
   enabled: true
