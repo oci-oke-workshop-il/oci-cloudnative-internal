@@ -88,7 +88,7 @@ helm install external-secrets \
 
 ```bash
 
-apiVersion: external-secrets.io/v1beta1
+apiVersion: external-secrets.io/v1
 kind: SecretStore
 metadata:
   name: workshop-vault

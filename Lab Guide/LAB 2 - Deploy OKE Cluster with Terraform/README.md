@@ -10,13 +10,13 @@ This environment will be contained within a **cloud Compartment**, and communica
 
 ###  Task 1: Go to Terraform Directory
 
-1. **Change directory** to the `Terraform-templates` folder within the cloned repository:
+1. **Change directory** to the `terraform-templates` folder within the cloned repository:
 
 ```bash
-cd oci-cloudnative-ext/Terraform-templates
+cd oci-cloudnative-int/terraform-templates
 ```
 
-**Explanation**: The `cd` command navigates to the `Terraform-templates` directory where you will configure the deployment templates.
+**Explanation**: The `cd` command navigates to the `terraform-templates` directory where you will configure the deployment templates.
 
 ---
 
