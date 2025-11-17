@@ -141,9 +141,9 @@ kubectl get secretstore -A
       - Secrets contents: `Replace this value with the value of the adb-tnsname` **(refer to next section Obtain the adb-tnsname  to identify the value)**
       - Create secret: **Click CREATE SECRET when you finished to fill the information above**
       
-Use the same value as before **oadb_wallet_pw** and follow the guide where to find the **oadb_service**: 
+Use the same value as before **oadb_wallet_pw** ( Same password from the Terraform ) and follow the guide where to find the **oadb_service**: 
 
--	Obtain the `adb-tnsname`
+-	Obtain the `adb-service`
       -  Duplicate the OCI portal window > Navigate to the **Search bar** and search for : Autonomous transaction
 
 ![Public Key Added](./../../images/screenshot/Lab3/8.png)
@@ -339,6 +339,8 @@ kubectl get secrets
 
 
 ```bash
+sudo apt update
+sudo apt install -y jq
 kubectl get secret oadb-wallet -o json | jq -r ."data.key" | base64 -d
 
 
