@@ -65,7 +65,7 @@ The new value must point to the container repository previously created in **Lab
 
 ### Task 4: Deploy the eCommerce App with Helm
 
-1.	Deploy the application by Executing the following command:
+1.	Deploy the application by Executing the following command from path **~/USERNAME/oci-cloudnative-internal/deploy/complete/helm-chart** :
 ```bash
 helm install mymushop mushop \
   --namespace mushop \
