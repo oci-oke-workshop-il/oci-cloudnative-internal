@@ -140,6 +140,8 @@ kubectl get secretstore -A
       - Secret Type Template: `< plain-text > `
       - Secrets contents: `Replace this value with the value of the adb-tnsname` **(refer to next section Obtain the adb-tnsname  to identify the value)**
       - Create secret: **Click it when you finished to fill the information above**
+      Please See the Example of the oadb-conncetion secret, TO FIND THE VALUES Follow guide bellow
+      ![Public Key Added](./../../images/screenshot/Lab3/21.png)
 
 -	Obtain the `adb-tnsname`
       -  Duplicate the OCI portal window > Navigate to the **Search bar** and search for : Autonomous transaction
