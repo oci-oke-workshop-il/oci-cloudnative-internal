@@ -59,7 +59,6 @@ The new value must point to the container repository previously created in **Lab
 
 ![Public Key Added](./../../images/screenshot/Lab4/5.png)
 
-5.	Repeat this process for **API**, **Storefront** & **Catalogue microservices**!!!
 
 ---
 
